@@ -1,0 +1,70 @@
+@keyframes myMove {
+    0% {left: 0px; top: 0px;
+        
+       }
+    25% {left: 200px; top: 0px;
+        
+        }
+    50% {left: 200px; top: 200px;
+       }
+    75% {left: 0px; top: 200px;
+      
+        }
+    100% {left: 0px; top: 0px;
+        
+        }
+}
+
+body .gradient-background {
+    height: 600px;
+     background: linear-gradient(62deg, #ffffff, #afafaf, #696969, #4d4d4d);
+       animation: gradient 15s ease infinite; 
+        background-size: 400% 400%;
+    
+  }
+  @keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
+
+body{
+  background-color: black;
+
+}
+div{
+    position: relative;
+    animation-name: myMove;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+div img {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 100px;
+
+    
+}
+
+div img:hover {
+    color: aqua;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
+
+}
